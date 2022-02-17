@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    min-height: 100vh;
+    background: #2d2d2d;
+}
+
+.flex-conteiner {
+    display: flex;
+    justify-content: left;
+    width: 100vw;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.contorno {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 10px solid #099c22;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+    padding: 2%;
+}
+
+.conversor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.number1 {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.number2 {
+    width: 100%;
+    margin-left: 20px;
+}
