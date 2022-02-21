@@ -39,5 +39,13 @@
             </a>
         </li>
 
+        <li class='list'>
+            <a href='../PHP/peso.php'>
+                <span class='icon'>
+                    <ion-icon name="scale-outline"></ion-icon>
+                </span>
+                <span class='title-menu'>PESO</span>
+            </a>
+        </li>
     </ul>
 </div>

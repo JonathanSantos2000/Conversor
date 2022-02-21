@@ -12,10 +12,10 @@ include '../PHP/include/header.php';
         <div class="contorno">
             <div class="conteiner-cabecalho">
                 <h1 class="page-title">
-                    Conversor de tempo
+                    Conversor de peso
                 </h1>
                 <p class="page-subtitle">
-                    Digite um valor a ser convertido em anos ou meses ou semanas ou dias ou horas ou minutos ou segundos.
+                    Digite um valor a ser convertido.
                 </p>
                 <hr>
             </div>
@@ -23,11 +23,12 @@ include '../PHP/include/header.php';
                 <input type="number" id="valor" size="2" placeholder="Insira o valor">
                 <div class="conversor">
                     <div class="number1">
-                        <select name="select" id="timerF">
+                        <select name="select" id="weightF">
                             <option value="">Selecionar</option>
-                            <option value="horas">Horas</option>
-                            <option value="minutos">Minutos</option>
-                            <option value="segundos">Segundos</option>
+                            <option value="gramas">Gramas</option>
+                            <option value="quilos">Quilos</option>
+                            <option value="libras">Libras</option>
+                            <option value="toneladas">Toneladas</option>
                         </select>
                     </div>
                     <!-- sdasdasd -->
@@ -36,18 +37,19 @@ include '../PHP/include/header.php';
                     </div>
                     <!-- saddasd -->
                     <div class="number2">
-                        <select name="select" id="timerS">
+                        <select name="select" id="weightS">
                             <option value="">Selecionar</option>
-                            <option value="horas">Horas</option>
-                            <option value="minutos">Minutos</option>
-                            <option value="segundos">Segundos</option>
+                            <option value="gramas">Gramas</option>
+                            <option value="quilos">Quilos</option>
+                            <option value="libras">Libras</option>
+                            <option value="toneladas">Toneladas</option>
                         </select>
                     </div>
 
                     <br>
                 </div>
                 <button type="submit" onclick="converteTempo()">Converter</button>
-                <label for="valorConvertido" id="valorConvertido">O valor em _____ é de:</label>
+                <label for="valorConvertido" id="valorConvertido">O valor _____ em _____ é de:</label>
             </div>
         </div>
     </div>

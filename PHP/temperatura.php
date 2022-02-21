@@ -46,7 +46,7 @@ include '../PHP/include/header.php';
 
           <br>
         </div>
-        <button type="submit" onclick="Converter()">Converter</button>
+        <button type="submit" onclick="converterTemperatura()">Converter</button>
         <label for="valorConvertido" id="valorConvertido">O valor em _____ é de:</label>
       </div>
     </div>
