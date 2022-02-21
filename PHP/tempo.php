@@ -25,6 +25,7 @@ include '../PHP/include/header.php';
                     <div class="number1">
                         <select name="select" id="timerF">
                             <option value="">Selecionar</option>
+                            <option value="dias">Dias</option>
                             <option value="horas">Horas</option>
                             <option value="minutos">Minutos</option>
                             <option value="segundos">Segundos</option>
@@ -38,6 +39,7 @@ include '../PHP/include/header.php';
                     <div class="number2">
                         <select name="select" id="timerS">
                             <option value="">Selecionar</option>
+                            <option value="dias">Dias</option>
                             <option value="horas">Horas</option>
                             <option value="minutos">Minutos</option>
                             <option value="segundos">Segundos</option>

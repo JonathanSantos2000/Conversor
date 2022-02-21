@@ -9,12 +9,17 @@ function converteTempo() {
                 case 'minutos':
                     var convertido = valor / 60;
                     var valorConvertido = document.getElementById("valorConvertido");
-                    valorConvertido.innerHTML = "O valor " + valor + " em " + selecedTimerS + " é de: " + convertido.toFixed(1) + "m";
+                    valorConvertido.innerHTML = "O valor " + valor + "segundo(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " minuto(s).";
                     break;
                 case 'horas':
                     var convertido = valor / 3600;
                     var valorConvertido = document.getElementById("valorConvertido");
-                    valorConvertido.innerHTML = "O valor " + valor + " em " + selecedTimerS + " é de: " + convertido.toFixed(1) + "h";
+                    valorConvertido.innerHTML = "O valor " + valor + "segundo(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " hora(s).";
+                    break;
+                case 'dias':
+                    var convertido = valor / 86400;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + "segundo(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " dia(s).";
                     break;
                 default:
                     var valorConvertido = document.getElementById("valorConvertido");
@@ -27,12 +32,17 @@ function converteTempo() {
                 case 'segundos':
                     var convertido = valor * 60;
                     var valorConvertido = document.getElementById("valorConvertido");
-                    valorConvertido.innerHTML = "O valor " + valor + " em " + selecedTimerS + " é de: " + convertido.toFixed(1) + "s";
+                    valorConvertido.innerHTML = "O valor " + valor + "minuto(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " segundo(s).";
                     break;
                 case 'horas':
                     var convertido = valor / 60;
                     var valorConvertido = document.getElementById("valorConvertido");
-                    valorConvertido.innerHTML = "O valor " + valor + " em " + selecedTimerS + " é de: " + convertido.toFixed(1) + "h";
+                    valorConvertido.innerHTML = "O valor " + valor + "minuto(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " hora(s).";
+                    break;
+                case 'dias':
+                    var convertido = valor / 1440;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + "minuto(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " dia(s).";
                     break;
                 default:
                     var valorConvertido = document.getElementById("valorConvertido");
@@ -45,12 +55,40 @@ function converteTempo() {
                 case 'segundos':
                     var convertido = valor * 3600;
                     var valorConvertido = document.getElementById("valorConvertido");
-                    valorConvertido.innerHTML = "O valor " + valor + " em  " + selecedTimerS + " é de: " + convertido.toFixed(1) + "s";
+                    valorConvertido.innerHTML = "O valor " + valor + "hora(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " segundo(s).";
                     break;
                 case 'minutos':
                     var convertido = valor * 60;
                     var valorConvertido = document.getElementById("valorConvertido");
-                    valorConvertido.innerHTML = "O valor " + valor + " em " + selecedTimerS + " é de: " + convertido.toFixed(1) + "m";
+                    valorConvertido.innerHTML = "O valor " + valor + "hora(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " minuto(s).";
+                    break;
+                case 'dias':
+                    var convertido = valor / 24;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + "hora(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " dia(s).";
+                    break;
+                default:
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "Por favor selecione uma tempo";
+                    break;
+            }
+            break;
+        case 'dias':
+            switch (selecedTimerS) {
+                case 'segundos':
+                    var convertido = valor * 86400;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + "dia(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " segundo(s).";
+                    break;
+                case 'minutos':
+                    var convertido = valor * 1440;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + "dia(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " minuto(s).";
+                    break;
+                case 'horas':
+                    var convertido = valor * 24;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + "dia(s) em " + selecedTimerS + " é de: " + convertido.toFixed(1) + " Hora(s).";
                     break;
                 default:
                     var valorConvertido = document.getElementById("valorConvertido");
