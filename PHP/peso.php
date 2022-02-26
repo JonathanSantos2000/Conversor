@@ -28,7 +28,6 @@ include '../PHP/include/header.php';
                             <option value="gramas">Gramas</option>
                             <option value="quilos">Quilos</option>
                             <option value="libras">Libras</option>
-                            <option value="toneladas">Toneladas</option>
                         </select>
                     </div>
                     <!-- sdasdasd -->
@@ -42,13 +41,12 @@ include '../PHP/include/header.php';
                             <option value="gramas">Gramas</option>
                             <option value="quilos">Quilos</option>
                             <option value="libras">Libras</option>
-                            <option value="toneladas">Toneladas</option>
                         </select>
                     </div>
 
                     <br>
                 </div>
-                <button type="submit" onclick="converteTempo()">Converter</button>
+                <button type="submit" onclick="converterPeso()">Converter</button>
                 <label for="valorConvertido" id="valorConvertido">O valor _____ em _____ é de:</label>
             </div>
         </div>

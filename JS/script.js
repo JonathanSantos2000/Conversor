@@ -169,3 +169,72 @@ function converterTemperatura() {
     }
 
 }
+
+
+/* --------------------------------------------------FIM-------------------------------------------------------- */
+/* ---------------------------------------------INICIO CONVERSOR------------------------------------------------ */
+/* --------------------------------------------------Peso------------------------------------------------------- */
+
+function converterPeso() {
+    var selecedweightF = document.getElementById('weightF').value;
+    var selecedweightS = document.getElementById('weightS').value;
+    var weightSelect = document.getElementById('valor').value;
+    var valor = parseFloat(weightSelect);
+    switch (selecedweightF) {
+        case 'gramas':
+            switch (selecedweightS) {
+                case 'quilos':
+                    var convertido = valor / 1000;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + " grama(s) em " + selecedweightS + " é de: " + convertido.toFixed(1) + " quilo(s).";
+                    break;
+                case 'libras':
+                    var convertido = valor / 454;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + "grama(s) em " + selecedweightS + " é de: " + convertido.toFixed(1) + " libra(s).";
+                    break;
+                default:
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "Por favor selecione um peso";
+                    break;
+            }
+            break;
+        case 'quilos':
+            switch (selecedweightS) {
+                case 'gramas':
+                    var convertido = valor * 1000;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + " quilo(s) em " + selecedweightS + " é de: " + convertido.toFixed(1) + " grama(s).";
+                    break;
+                case 'libras':
+                    var convertido = valor * 2.205;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + " quilo(s) em " + selecedweightS + " é de: " + convertido.toFixed(1) + " libra(s).";
+                    break;
+                default:
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "Por favor selecione um peso";
+                    break;
+            }
+            break;
+        case 'libras':
+            switch (selecedweightS) {
+                case 'gramas':
+                    var convertido = valor * 454;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + " libra(s) em " + selecedweightS + " é de: " + convertido.toFixed(1) + " grama(s).";
+                    break;
+                case 'libras':
+                    var convertido = valor / 2.205;
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "O valor " + valor + " quilo(s) em " + selecedweightS + " é de: " + convertido.toFixed(1) + " quilo(s).";
+                    break;
+                default:
+                    var valorConvertido = document.getElementById("valorConvertido");
+                    valorConvertido.innerHTML = "Por favor selecione um peso";
+                    break;
+            }
+            break;
+
+    }
+}

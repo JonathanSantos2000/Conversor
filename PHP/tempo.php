@@ -49,7 +49,7 @@ include '../PHP/include/header.php';
                     <br>
                 </div>
                 <button type="submit" onclick="converteTempo()">Converter</button>
-                <label for="valorConvertido" id="valorConvertido">O valor em _____ é de:</label>
+                <label for="valorConvertido" id="valorConvertido">O valor _____ em _____ é de:</label>
             </div>
         </div>
     </div>
